@@ -1,0 +1,50 @@
+.place-card {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+  display: inline-flex;
+  padding: 30px 40px;
+
+  @media screen and (max-width: 767px) {
+    padding: 25px 50px;
+  }
+
+  &__title {
+    color: #1D1D1D;
+    font-size: 36px;
+    margin-bottom: 55px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      margin-bottom: 40px;
+      white-space: nowrap;
+    }
+  }
+
+  &__desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__offer {
+    font-size: 14px;
+    color: #626262;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__delivery {
+    padding: 8px 16px;
+    background: #262626;
+    border-radius: 16px;
+    color: #FFFFFF;
+    font-size: 13px;
+  }
+}

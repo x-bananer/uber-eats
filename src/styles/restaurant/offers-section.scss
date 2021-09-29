@@ -1,0 +1,31 @@
+.offers-section {
+  padding-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 25px;
+  }
+
+  &__content {
+    display: none;
+    z-index: 1;
+  }
+
+  &__content.active {
+    display: block;
+  }
+
+  &__line {
+    top: 80px;
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}

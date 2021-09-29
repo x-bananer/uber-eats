@@ -1,0 +1,11 @@
+.search-section {
+  position: relative;
+
+  &__container {
+    padding: 56px 0 56px;
+
+    @media screen and (max-width: 956px) {
+      padding: 56px 8px 56px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.hero-section {
+  background-image: url(../../images/hero.png);
+  background-size: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px;
+
+  @media screen and (max-width: 767px) {
+    padding: 130px 8px 0 8px;
+    max-height: 255px;
+  }
+}
+
+.hero-section__container {
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    top: 20px;
+  }
+
+}

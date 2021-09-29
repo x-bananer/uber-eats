@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.min.css">
+  <title>UBER EATS | Restaurant</title>
+</head>
+
+<body>
+  <header class="header" id="up-btn">
+    <div class="header__section">
+      <div class="container header__container">
+        <span class="header__logo-wrap">
+          <a href="#" class="header__logo">
+            <img class="header__icon" src="./images/logo.svg" alt="page logo">
+          </a>
+        </span>
+        <div class="header-user-menu header_user-menu">
+          <div class="header-user-menu__item">
+            <button class="btn login-btn header-user-menu__toggle">
+              Войти
+            </button>
+          </div>
+          <div class="header-user-menu__item">
+            <button class="btn header-user-menu__basket">
+              <svg class="svg-img header-user-menu__icon" height="25" width="20">
+                <use xlink:href="./images/icons/sprite.svg#basket"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <section class="section hero-section">
+        <div class="container hero-section__container">
+          <div class="hero-section__content place-card">
+            <div class="place-card__container">
+              <h1 class="place-card__title">Трактир «Пушкин»</h1>
+              <div class="place-card__desc">
+                <div class="place-card__offer">₽₽₽ • Европейская</div>
+                <div class="place-card__delivery">40 - 50 мин</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section offers-section">
+        <span class="offers-section__line line line__phones"></span>
+        <div class="container offers-section__container">
+          <nav class="offers-section__menu offers-menu">
+            <ul class="offers-menu__list">
+              <li class="offers-menu__item offers-menu__item-active" data-tab="#snack">Закуски</li>
+              <li class="offers-menu__item" data-tab="#salad">Салаты</li>
+              <li class="offers-menu__item" data-tab="#soup">Супы</li>
+              <li class="offers-menu__item" data-tab="#hot">Горячие блюда</li>
+              <li class="offers-menu__item" data-tab="#side">Гарниры</li>
+              <li class="offers-menu__item" data-tab="#dessert">Десерты</li>
+            </ul>
+          </nav>
+
+          <div class="offers-section__content active offers" id="snack">
+            <h2 class="offers__title offers__phone-title">Закуски</h2>
+            <ul class="offers__list">
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Сельдь на бородинском хлебе</h3>
+                    <div class="dish-card__desc">C яйцом и огурцом</div>
+                  </div>
+                  <div class="dish-card__price">240 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/herring.png" alt="herring poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Соленья ассорти</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">320 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/pickles.png" alt="pickles poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Грибы маринованные</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">300 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/mushrooms.png" alt="mushrooms poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Сало домашнее с горчицей</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">320 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/lard.png" alt="lard poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Малосольная семга</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">390 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/salmon.png" alt="salmon poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Язык говяжий с хреном</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">350 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/beef.png" alt="beef poster">
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="offers-section__content offers" id="salad">
+            <h2 class="offers__title">Салаты</h2>
+            <ul class="offers__list">
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Сельдь на бородинском хлебе</h3>
+                    <div class="dish-card__desc">C яйцом и огурцом</div>
+                  </div>
+                  <div class="dish-card__price">240 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/herring.png" alt="herring poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Соленья ассорти</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">320 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/pickles.png" alt="pickles poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Грибы маринованные</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">300 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/mushrooms.png" alt="mushrooms poster">
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="offers-section__content offers" id="soup">
+            <h2 class="offers__title">Супы</h2>
+            <ul class="offers__list">
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Сельдь на бородинском хлебе</h3>
+                    <div class="dish-card__desc">C яйцом и огурцом</div>
+                  </div>
+                  <div class="dish-card__price">240 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/herring.png" alt="herring poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Соленья ассорти</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">320 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/pickles.png" alt="pickles poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Грибы маринованные</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">300 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/mushrooms.png" alt="mushrooms poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Сало домашнее с горчицей</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">320 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/lard.png" alt="lard poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Малосольная семга</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">390 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/salmon.png" alt="salmon poster">
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="offers-section__content offers" id="hot">
+            <h2 class="offers__title">Горячие блюда</h2>
+            <ul class="offers__list">
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Сельдь на бородинском хлебе</h3>
+                    <div class="dish-card__desc">C яйцом и огурцом</div>
+                  </div>
+                  <div class="dish-card__price">240 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/herring.png" alt="herring poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Соленья ассорти</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">320 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/pickles.png" alt="pickles poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Грибы маринованные</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">300 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/mushrooms.png" alt="mushrooms poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Сало домашнее с горчицей</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">320 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/lard.png" alt="lard poster">
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="offers-section__content offers" id="side">
+            <h2 class="offers__title">Гарниры</h2>
+            <ul class="offers__list">
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Сельдь на бородинском хлебе</h3>
+                    <div class="dish-card__desc">C яйцом и огурцом</div>
+                  </div>
+                  <div class="dish-card__price">240 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/herring.png" alt="herring poster">
+                </div>
+              </li>
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Соленья ассорти</h3>
+                    <div class="dish-card__desc"></div>
+                  </div>
+                  <div class="dish-card__price">320 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/pickles.png" alt="pickles poster">
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="offers-section__content offers" id="dessert">
+            <h2 class="offers__title offers__title-line">Десерты</h2>
+            <ul class="offers__list">
+              <li class="offers__item dish-card">
+                <div class="dish-card__text">
+                  <div class="dish-card__title">
+                    <h3 class="dish-card__name">Сельдь на бородинском хлебе</h3>
+                    <div class="dish-card__desc">C яйцом и огурцом</div>
+                  </div>
+                  <div class="dish-card__price">240 ₽</div>
+                </div>
+                <div class="dish-card__poster">
+                  <img class="dish-card__img" src="./images/herring.png" alt="herring poster">
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrap">
+      <div class="footer__section">
+        <div class="footer__container container">
+          <span class="footer__logo-wrap">
+            <span href="" class="footer__logo">
+              <img src="./images/footer-logo.svg" alt="page logo">
+            </span>
+          </span>
+          <span class="footer__line line"></span>
+          <div class="footer__content-wrap">
+            <nav class="footer__menu">
+
+              <div class="footer__menu-left-col footer__menu-left-col-phones">
+
+                <div class="footer__select select">
+                  <div class="select__header">
+                    <span class="select__image">
+                      <img class="select__image-desk" src="./images/world.svg" alt="select icon world">
+                      <img class="select__image-phone" src="./images/half-world.svg" alt="select icon half world">
+                    </span>
+                    <span class="select__current">Русский</span>
+                    <div class="select__icon">
+                      <img src="./images/select-arrow.svg" alt="select arrow">
+                    </div>
+                  </div>
+                  <div class="select__menu">
+                    <div class="select__option select__rulang">Русский</div>
+                  </div>
+                </div>
+
+                <div class="footer__socials-menu socials">
+                  <div class="socials__title">
+                    <span class="socials__title-grid">#</span>
+                    <span class="socials__title-text">UberEats</span>
+                  </div>
+                  <ul class="socials__list">
+                    <li class="socials__item fb-item social">
+                      <a href="#">
+                        <img src="./images/social_fb.svg" alt="fb icon">
+                      </a>
+                    </li>
+                    <li class="socials__item social tw-item">
+                      <a href="#">
+                        <img src="./images/social_twitter.svg" alt="twitter icon">
+                      </a>
+                    </li>
+                    <li class="socials__item ig-item social">
+                      <a href="#">
+                        <img src="./images/social_insta.svg" alt="ig icon">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__menu-middle-col">
+                <nav class="about">
+                  <ul class="about__list">
+                    <li class="about__item">
+                      <a href="#">Об UberEats</a>
+                    </li>
+                    <li class="about__item">
+                      <a href="#">Станьте партнёром по доставке</a>
+                    </li>
+                    <li class="about__item">
+                      <a href="#">Станьте парнёром-рестораном</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer__menu-right-col">
+                <nav class="trait">
+                  <ul class="trait__list">
+                    <li class="trait__item">
+                      <a href="#">Все города</a>
+                    </li>
+                    <li class="trait__item">
+                      <a href="#">Цены</a>
+                    </li>
+                    <li class="trait__item">
+                      <a href="#">Помощь</a>
+                    </li>
+                    <li class="trait__item">
+                      <a href="#">FAQs</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </nav>
+          </div>
+          <span class="footer__line line"></span>
+          <div class="footer__btns-wrap">
+            <div class="footer__btns-container">
+              <button>
+                <img src="./images/appstore-btn.svg" alt="app store button">
+              </button>
+            </div>
+            <div class="footer__btns-container">
+              <button>
+                <img src="./images/gplay-btn.svg" alt="google play button">
+              </button>
+            </div>
+          </div>
+          <span class="footer__line line"></span>
+          <div class="footer__content-wrap">
+            <nav class="footer__menu footer__bottom-menu">
+              <div class="footer__menu-left-col">
+                <span>© 2017 Uber Technologies Inc.</span>
+              </div>
+              <div class="footer__menu-middle-col">
+                <a href="#" target="_blank" download="#">
+                  Обработка персональных данных
+                </a>
+              </div>
+              <div class="footer__menu-right-col">
+                <a href="#" target="_blank" download="#">
+                  Пользовательское соглашение
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="up-btn">
+        <a href="#up-btn" class="up-btn__anchor">
+          <div class="up-btn__background">
+            <div class="up-btn__arrow">
+              <svg class="svg-img header-user-menu__icon" height="25" width="15">
+                <use xlink:href="./images/icons/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="restaurant.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+.up-btn {
+  position: absolute;
+  bottom: 2%;
+  left: 90%;
+  right: 0;
+  color: #FFFFFF;
+
+  @media screen and (max-width: 956px) {
+    left: 88%;
+  }
+
+  @media screen and (max-width: 767px) {
+    left: 75%;
+  }
+
+  @media screen and (max-width: 320px) {
+    left: 70%;
+  }
+
+  &__background {
+    width: 80px;
+    height: 80px;
+    background: #59BD5A;
+    display: flex;
+    border-radius: 2px;
+  }
+
+  &__arrow {
+    margin: auto;
+  }
+}

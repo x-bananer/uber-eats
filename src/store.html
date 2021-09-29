@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.min.css">
+  <title>UBER EATS | Store</title>
+</head>
+
+<body>
+
+  <header class="header" id="up-btn">
+    <div class="header__section">
+      <div class="container header__container">
+        <span class="header__logo-wrap">
+          <a href="#" class="header__logo">
+            <img class="header__icon" src="./images/logo.svg" alt="page logo">
+          </a>
+        </span>
+        <div class="header-user-menu">
+          <div class="header-user-menu__item">
+            <button class="btn login-btn header-user-menu__toggle">
+              Войти
+            </button>
+          </div>
+          <div class="header-user-menu__item">
+            <button class="btn header-user-menu__basket">
+              <svg class="svg-img header-user-menu__icon" height="25" width="20">
+                <use xlink:href="./images/icons/sprite.svg#basket"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <section class="section search-section">
+        <div class="container search-section__container">
+          <form class="search-form" id="form">
+            <label class="search-form__block">
+              <input type="text" id="search" placeholder="Поиск по ресторанам и кухням" name="name" class="search-form__input">
+            </label>
+            <span class="search-form__line line"></span>
+          </form>
+        </div>
+      </section>
+
+      <section class="section features-section">
+        <div class="container features-section__container">
+          <h1 class="features-section__title">Рестораны в Москве</h1>
+          <ul class="features">
+            <li class="features__item feature">
+              <a href="#" class="feature__wrap">
+                <div class="feature__image">
+                  <div class="feature__image-wrapper">
+                    <img src="./images/macd.png" alt="mcdonald's poster" class="feature__icon">
+                  </div>
+                </div>
+                <div class="feature__desc">
+                  <h2 class="feature__brand">Макдоналдс — Газетный</h2>
+                  <div class="feature__offer">₽₽ • Бургеры</div>
+                  <div class="feature__delivery">25 - 35 мин</div>
+                </div>
+              </a>
+            </li>
+            <li class="features__item feature">
+              <a href="#" class="feature__wrap">
+                <div class="feature__image">
+                  <div class="feature__image-wrapper">
+                    <img src="./images/dimsum.png" alt="dimsum poster" class="feature__icon">
+                  </div>
+                </div>
+                <div class="feature__desc">
+                  <h2 class="feature__brand">DimSum & Co — ЦДМ</h2>
+                  <div class="feature__offer">₽ • Японская • Китайская • Азиатская</div>
+                  <div class="feature__delivery">40 - 50 мин</div>
+                </div>
+              </a>
+            </li>
+            <li class="features__item feature">
+              <a href="#" class="feature__wrap">
+                <div class="feature__image">
+                  <div class="feature__image-wrapper">
+                    <img src="./images/dvijok.png" alt="dvijok poster" class="feature__icon">
+                  </div>
+                </div>
+                <div class="feature__desc">
+                  <h2 class="feature__brand">ДвижОК — Манежная</h2>
+                  <div class="feature__offer">₽ • Американская • Европейская</div>
+                  <div class="feature__delivery">35 - 45 мин</div>
+                </div>
+              </a>
+            </li>
+            <li class="features__item feature">
+              <a href="#" class="feature__wrap">
+                <div class="feature__image">
+                  <div class="feature__image-wrapper">
+                    <img src="./images/nya.png" alt="nya poster" class="feature__icon">
+                  </div>
+                </div>
+                <div class="feature__desc">
+                  <h2 class="feature__brand">НЯ — NHA</h2>
+                  <div class="feature__offer">₽₽ • Вьетнамская</div>
+                  <div class="feature__delivery">30 - 40 мин</div>
+                </div>
+              </a>
+            </li>
+            <li class="features__item feature">
+              <a href="#" class="feature__wrap">
+                <div class="feature__image">
+                  <div class="feature__image-wrapper">
+                    <img src="./images/dzy.png" alt="dzy poster" class="feature__icon">
+                  </div>
+                </div>
+                <div class="feature__desc">
+                  <h2 class="feature__brand">Точка Дзы — Цветной</h2>
+                  <div class="feature__offer">₽₽ • Вьетнамская</div>
+                  <div class="feature__delivery">40 - 50 мин</div>
+                </div>
+              </a>
+            </li>
+            <li class="features__item feature">
+              <a href="#" class="feature__wrap">
+                <div class="feature__image">
+                  <div class="feature__image-wrapper">
+                    <img src="./images/cinnabon.png" alt="cinnabon poster" class="feature__icon">
+                  </div>
+                </div>
+                <div class="feature__desc">
+                  <h2 class="feature__brand">Cinnabon</h2>
+                  <div class="feature__offer">₽ • Выпечка • Десерты • Капкейки</div>
+                  <div class="feature__delivery">25 - 35 мин</div>
+                </div>
+              </a>
+            </li>
+            <li class="features__item feature">
+              <a href="#" class="feature__wrap">
+                <div class="feature__image">
+                  <div class="feature__image-wrapper">
+                    <img src="./images/pizzelove.png" alt="pizzelove poster" class="feature__icon">
+                  </div>
+                </div>
+                <div class="feature__desc">
+                  <h2 class="feature__brand">PIZZELOVE</h2>
+                  <div class="feature__offer">₽₽ • Пицца</div>
+                  <div class="feature__delivery">15 - 25 мин</div>
+                </div>
+              </a>
+            </li>
+            <li class="features__item feature">
+              <a href="#" class="feature__wrap">
+                <div class="feature__image">
+                  <div class="feature__image-wrapper">
+                    <img src="./images/zu.png" alt="zu poster" class="feature__icon">
+                  </div>
+                </div>
+                <div class="feature__desc">
+                  <h2 class="feature__brand">Zю кафе — Тверская</h2>
+                  <div class="feature__offer">₽₽ • Японская</div>
+                  <div class="feature__delivery">25 - 35 мин</div>
+                </div>
+              </a>
+            </li>
+            <li class="features__item feature">
+              <a href="#" class="feature__wrap">
+                <div class="feature__image">
+                  <div class="feature__image-wrapper">
+                    <img src="./images/bq.png" alt="bq poster" class="feature__icon">
+                  </div>
+                </div>
+                <div class="feature__desc">
+                  <h2 class="feature__brand">Bar BQ Cafe — Манежная</h2>
+                  <div class="feature__offer">₽₽₽ • Европейская</div>
+                  <div class="feature__delivery">30 - 40 мин</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrap">
+      <div class="footer__section">
+        <div class="footer__container container">
+          <span class="footer__logo-wrap">
+            <span href="" class="footer__logo">
+              <img src="./images/footer-logo.svg" alt="page logo">
+            </span>
+          </span>
+          <span class="footer__line line"></span>
+          <div class="footer__content-wrap">
+            <nav class="footer__menu">
+              <div class="footer__menu-left-col footer__menu-left-col-phones">
+
+                <div class="footer__select select">
+                  <div class="select__header">
+                    <span class="select__image">
+                      <img class="select__image-desk" src="./images/world.svg" alt="select icon world">
+                      <img class="select__image-phone" src="./images/half-world.svg" alt="select icon half world">
+                    </span>
+                    <span class="select__current">Русский</span>
+                    <div class="select__icon">
+                      <img src="./images/select-arrow.svg" alt="select arrow">
+                    </div>
+                  </div>
+                  <div class="select__menu">
+                    <div class="select__option select__rulang">Русский</div>
+                  </div>
+                </div>
+
+                <div class="footer__socials-menu socials">
+                  <div class="socials__title">
+                    <span class="socials__title-grid">#</span>
+                    <span class="socials__title-text">UberEats</span>
+                  </div>
+                  <ul class="socials__list">
+                    <li class="socials__item fb-item social">
+                      <a href="#">
+                        <img src="./images/social_fb.svg" alt="fb icon">
+                      </a>
+                    </li>
+                    <li class="socials__item tw-item social">
+                      <a href="#">
+                        <img src="./images/social_twitter.svg" alt="twitter icon">
+                      </a>
+                    </li>
+                    <li class="socials__item ig-item social">
+                      <a href="#">
+                        <img src="./images/social_insta.svg" alt="ig icon">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__menu-middle-col">
+                <nav class="about">
+                  <ul class="about__list">
+                    <li class="about__item">
+                      <a href="#">Об UberEats</a>
+                    </li>
+                    <li class="about__item">
+                      <a href="#">Станьте партнёром по доставке</a>
+                    </li>
+                    <li class="about__item">
+                      <a href="#">Станьте парнёром-рестораном</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer__menu-right-col">
+                <nav class="trait">
+                  <ul class="trait__list">
+                    <li class="trait__item">
+                      <a href="#">Все города</a>
+                    </li>
+                    <li class="trait__item">
+                      <a href="#">Цены</a>
+                    </li>
+                    <li class="trait__item">
+                      <a href="#">Помощь</a>
+                    </li>
+                    <li class="trait__item">
+                      <a href="#">FAQs</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </nav>
+          </div>
+          <span class="footer__line line"></span>
+          <div class="footer__btns-wrap">
+            <div class="footer__btns-container">
+              <button>
+                <img src="./images/appstore-btn.svg" alt="app store button">
+              </button>
+            </div>
+            <div class="footer__btns-container">
+              <button>
+                <img src="./images/gplay-btn.svg" alt="google play button">
+              </button>
+            </div>
+          </div>
+          <span class="footer__line line"></span>
+          <div class="footer__content-wrap">
+            <nav class="footer__menu footer__bottom-menu">
+              <div class="footer__menu-left-col">
+                <span>© 2017 Uber Technologies Inc.</span>
+              </div>
+              <div class="footer__menu-middle-col">
+                <a href="#" target="_blank" download="#">
+                  Обработка персональных данных
+                </a>
+              </div>
+              <div class="footer__menu-right-col">
+                <a href="#" target="_blank" download="#">
+                  Пользовательское соглашение
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="up-btn">
+        <a href="#up-btn" class="up-btn__anchor">
+          <div class="up-btn__background">
+            <div class="up-btn__arrow">
+              <svg class="svg-img" height="25" width="15">
+                <use xlink:href="./images/icons/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="store.min.js"></script>
+</body>
+
+</html>

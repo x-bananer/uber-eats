@@ -1,0 +1,44 @@
+.socials {
+  &__title {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  &__title-grid {
+    color: #49A144;
+    padding-right: 1px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+
+    @media screen and (max-width: 956px) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 40%;
+    }
+  }
+}
+
+.fb-item {
+  &:hover {
+    background: #646464;
+  }
+}
+
+.tw-item {
+  &:hover {
+    background: #878787;
+  }
+}
+
+.ig-item {
+  &:hover {
+    background: #A2A2A2;
+  }
+}

@@ -1,0 +1,33 @@
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+  &__item {
+    position: relative;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-basis: 305px;
+    margin-bottom: 36px;
+    margin-right: 8px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: 956px) {
+
+      &:nth-child(3n) {
+        margin-right: 8px;
+      }
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+  }
+}

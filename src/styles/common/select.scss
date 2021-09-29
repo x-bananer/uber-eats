@@ -1,0 +1,91 @@
+.select {
+  width: 230px;
+  position: relative;
+
+  &__header {
+    display: flex;
+    border-radius: 2px;
+    background: #3B3B3B;
+    cursor: pointer;
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: center;
+    padding-left: 16px;
+    background-repeat: no-repeat;
+  }
+
+  &__image-desk {
+    @media screen and (max-width: 956px) {
+      display: none;
+    }
+  }
+
+  &__image-phone {
+    @media screen and (max-width: 5000px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 956px) {
+      display: block;
+    }
+  }
+
+  &__current {
+    font-size: 13px;
+    line-height: 1;
+    padding: 16px 0 16px 16px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 45px;
+    text-align: center;
+    margin-left: auto;
+  }
+
+  &__menu {
+    display: none;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: #3B3B3B;
+    border-radius: 0 0 2px 2px;
+  }
+
+  &__option {
+    cursor: pointer;
+    line-height: 1;
+    padding: 16px 0 16px 48px;
+
+    &:hover {
+      background: #646464;
+    }
+  }
+
+  @media screen and (max-width: 956px) {
+    width: 175px;
+  }
+
+  @media screen and (max-width: 956px) {
+    margin-bottom: 25px;
+  }
+}
+
+.select.is-active .select__menu {
+  display: block;
+}
+
+.select.is-active .select__header {
+  border-radius: 2px 2px 0 0;
+}
